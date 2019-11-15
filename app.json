@@ -1,4 +1,7 @@
 {
   "name": "LoisPro",
-  "displayName": "Lois Pro"
+  "displayName": "Lois Pro",
+  "expo": {
+    "platforms": ["web"]
+  }
 }

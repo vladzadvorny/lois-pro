@@ -60,3 +60,7 @@ buck-out/
 
 # mac
 .DS_Store
+
+# Expo
+web-build
+.expo
