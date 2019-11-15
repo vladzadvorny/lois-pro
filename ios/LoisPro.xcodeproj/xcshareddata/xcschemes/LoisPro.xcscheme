@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "hello.app"
-               BlueprintName = "hello"
-               ReferencedContainer = "container:hello.xcodeproj">
+               BuildableName = "LoisPro.app"
+               BlueprintName = "LoisPro"
+               ReferencedContainer = "container:LoisPro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "helloTests.xctest"
-               BlueprintName = "helloTests"
-               ReferencedContainer = "container:hello.xcodeproj">
+               BuildableName = "LoisProTests.xctest"
+               BlueprintName = "LoisProTests"
+               ReferencedContainer = "container:LoisPro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "helloTests.xctest"
-               BlueprintName = "helloTests"
-               ReferencedContainer = "container:hello.xcodeproj">
+               BuildableName = "LoisProTests.xctest"
+               BlueprintName = "LoisProTests"
+               ReferencedContainer = "container:LoisPro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "hello.app"
-            BlueprintName = "hello"
-            ReferencedContainer = "container:hello.xcodeproj">
+            BuildableName = "LoisPro.app"
+            BlueprintName = "LoisPro"
+            ReferencedContainer = "container:LoisPro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "hello.app"
-            BlueprintName = "hello"
-            ReferencedContainer = "container:hello.xcodeproj">
+            BuildableName = "LoisPro.app"
+            BlueprintName = "LoisPro"
+            ReferencedContainer = "container:LoisPro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "hello.app"
-            BlueprintName = "hello"
-            ReferencedContainer = "container:hello.xcodeproj">
+            BuildableName = "LoisPro.app"
+            BlueprintName = "LoisPro"
+            ReferencedContainer = "container:LoisPro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

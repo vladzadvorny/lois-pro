@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* helloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* helloTests.m */; };
-		071A6CFD77DE7B9E61D9163F /* libPods-hello-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B09847074E11D75ACDC93F7 /* libPods-hello-tvOSTests.a */; };
+		00E356F31AD99517003FC87E /* LoisProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LoisProTests.m */; };
+		071A6CFD77DE7B9E61D9163F /* libPods-LoisPro-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B09847074E11D75ACDC93F7 /* libPods-LoisPro-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		162A7B663C18EF3E8A63962E /* libPods-hello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0945BAF6D786BE72D6082BD /* libPods-hello.a */; };
+		162A7B663C18EF3E8A63962E /* libPods-LoisPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0945BAF6D786BE72D6082BD /* libPods-LoisPro.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* helloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* helloTests.m */; };
-		E8166A8FE289E8D48D5AFF57 /* libPods-helloTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D65B6B1E04E55149CB1DDDC /* libPods-helloTests.a */; };
-		FDB11A5344DDA93927138C64 /* libPods-hello-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAF581637FE08FDDE22441 /* libPods-hello-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* LoisProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LoisProTests.m */; };
+		E8166A8FE289E8D48D5AFF57 /* libPods-LoisProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D65B6B1E04E55149CB1DDDC /* libPods-LoisProTests.a */; };
+		FDB11A5344DDA93927138C64 /* libPods-LoisPro-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAF581637FE08FDDE22441 /* libPods-LoisPro-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = hello;
+			remoteInfo = LoisPro;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "hello-tvOS";
+			remoteInfo = "LoisPro-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* helloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* LoisProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoisProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* helloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = hello/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = hello/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LoisProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoisProTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* LoisPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoisPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LoisPro/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LoisPro/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hello/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hello/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = hello/main.m; sourceTree = "<group>"; };
-		1B09847074E11D75ACDC93F7 /* libPods-hello-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hello-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* hello-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* hello-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B3A97F0A45A017A767FE719 /* Pods-hello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello.release.xcconfig"; path = "Target Support Files/Pods-hello/Pods-hello.release.xcconfig"; sourceTree = "<group>"; };
-		5EAAF581637FE08FDDE22441 /* libPods-hello-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hello-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EFBF7C6F0FDE30D8FC837AC /* Pods-hello-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-hello-tvOS/Pods-hello-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		80191806CA433AFC983A232F /* Pods-hello-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-hello-tvOSTests/Pods-hello-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		8D65B6B1E04E55149CB1DDDC /* libPods-helloTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helloTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EAA0134FFDD7A80C1EA1F3D /* Pods-hello-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-hello-tvOSTests/Pods-hello-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9DBBDEF75F6680DB9714F27C /* Pods-helloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloTests.release.xcconfig"; path = "Target Support Files/Pods-helloTests/Pods-helloTests.release.xcconfig"; sourceTree = "<group>"; };
-		C059F47DF111B48FD40730BD /* Pods-hello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello.debug.xcconfig"; path = "Target Support Files/Pods-hello/Pods-hello.debug.xcconfig"; sourceTree = "<group>"; };
-		CD6DC2513CCF43AC21E429E1 /* Pods-hello-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hello-tvOS.release.xcconfig"; path = "Target Support Files/Pods-hello-tvOS/Pods-hello-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E0945BAF6D786BE72D6082BD /* libPods-hello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E357C4727833501778D07E51 /* Pods-helloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloTests.debug.xcconfig"; path = "Target Support Files/Pods-helloTests/Pods-helloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LoisPro/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LoisPro/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LoisPro/main.m; sourceTree = "<group>"; };
+		1B09847074E11D75ACDC93F7 /* libPods-LoisPro-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoisPro-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* LoisPro-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoisPro-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* LoisPro-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoisPro-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3A97F0A45A017A767FE719 /* Pods-LoisPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro.release.xcconfig"; path = "Target Support Files/Pods-LoisPro/Pods-LoisPro.release.xcconfig"; sourceTree = "<group>"; };
+		5EAAF581637FE08FDDE22441 /* libPods-LoisPro-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoisPro-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFBF7C6F0FDE30D8FC837AC /* Pods-LoisPro-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-LoisPro-tvOS/Pods-LoisPro-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		80191806CA433AFC983A232F /* Pods-LoisPro-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-LoisPro-tvOSTests/Pods-LoisPro-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D65B6B1E04E55149CB1DDDC /* libPods-LoisProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoisProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAA0134FFDD7A80C1EA1F3D /* Pods-LoisPro-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-LoisPro-tvOSTests/Pods-LoisPro-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DBBDEF75F6680DB9714F27C /* Pods-LoisProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisProTests.release.xcconfig"; path = "Target Support Files/Pods-LoisProTests/Pods-LoisProTests.release.xcconfig"; sourceTree = "<group>"; };
+		C059F47DF111B48FD40730BD /* Pods-LoisPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro.debug.xcconfig"; path = "Target Support Files/Pods-LoisPro/Pods-LoisPro.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6DC2513CCF43AC21E429E1 /* Pods-LoisPro-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisPro-tvOS.release.xcconfig"; path = "Target Support Files/Pods-LoisPro-tvOS/Pods-LoisPro-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		E0945BAF6D786BE72D6082BD /* libPods-LoisPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoisPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E357C4727833501778D07E51 /* Pods-LoisProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoisProTests.debug.xcconfig"; path = "Target Support Files/Pods-LoisProTests/Pods-LoisProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8166A8FE289E8D48D5AFF57 /* libPods-helloTests.a in Frameworks */,
+				E8166A8FE289E8D48D5AFF57 /* libPods-LoisProTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162A7B663C18EF3E8A63962E /* libPods-hello.a in Frameworks */,
+				162A7B663C18EF3E8A63962E /* libPods-LoisPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB11A5344DDA93927138C64 /* libPods-hello-tvOS.a in Frameworks */,
+				FDB11A5344DDA93927138C64 /* libPods-LoisPro-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071A6CFD77DE7B9E61D9163F /* libPods-hello-tvOSTests.a in Frameworks */,
+				071A6CFD77DE7B9E61D9163F /* libPods-LoisPro-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* helloTests */ = {
+		00E356EF1AD99517003FC87E /* LoisProTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* helloTests.m */,
+				00E356F21AD99517003FC87E /* LoisProTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = helloTests;
+			path = LoisProTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* hello */ = {
+		13B07FAE1A68108700A75B9A /* LoisPro */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = hello;
+			name = LoisPro;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				E0945BAF6D786BE72D6082BD /* libPods-hello.a */,
-				5EAAF581637FE08FDDE22441 /* libPods-hello-tvOS.a */,
-				1B09847074E11D75ACDC93F7 /* libPods-hello-tvOSTests.a */,
-				8D65B6B1E04E55149CB1DDDC /* libPods-helloTests.a */,
+				E0945BAF6D786BE72D6082BD /* libPods-LoisPro.a */,
+				5EAAF581637FE08FDDE22441 /* libPods-LoisPro-tvOS.a */,
+				1B09847074E11D75ACDC93F7 /* libPods-LoisPro-tvOSTests.a */,
+				8D65B6B1E04E55149CB1DDDC /* libPods-LoisProTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		75ECEDF067A2F5A1912B7A7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C059F47DF111B48FD40730BD /* Pods-hello.debug.xcconfig */,
-				3B3A97F0A45A017A767FE719 /* Pods-hello.release.xcconfig */,
-				5EFBF7C6F0FDE30D8FC837AC /* Pods-hello-tvOS.debug.xcconfig */,
-				CD6DC2513CCF43AC21E429E1 /* Pods-hello-tvOS.release.xcconfig */,
-				8EAA0134FFDD7A80C1EA1F3D /* Pods-hello-tvOSTests.debug.xcconfig */,
-				80191806CA433AFC983A232F /* Pods-hello-tvOSTests.release.xcconfig */,
-				E357C4727833501778D07E51 /* Pods-helloTests.debug.xcconfig */,
-				9DBBDEF75F6680DB9714F27C /* Pods-helloTests.release.xcconfig */,
+				C059F47DF111B48FD40730BD /* Pods-LoisPro.debug.xcconfig */,
+				3B3A97F0A45A017A767FE719 /* Pods-LoisPro.release.xcconfig */,
+				5EFBF7C6F0FDE30D8FC837AC /* Pods-LoisPro-tvOS.debug.xcconfig */,
+				CD6DC2513CCF43AC21E429E1 /* Pods-LoisPro-tvOS.release.xcconfig */,
+				8EAA0134FFDD7A80C1EA1F3D /* Pods-LoisPro-tvOSTests.debug.xcconfig */,
+				80191806CA433AFC983A232F /* Pods-LoisPro-tvOSTests.release.xcconfig */,
+				E357C4727833501778D07E51 /* Pods-LoisProTests.debug.xcconfig */,
+				9DBBDEF75F6680DB9714F27C /* Pods-LoisProTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* hello */,
+				13B07FAE1A68108700A75B9A /* LoisPro */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* helloTests */,
+				00E356EF1AD99517003FC87E /* LoisProTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				75ECEDF067A2F5A1912B7A7C /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* hello.app */,
-				00E356EE1AD99517003FC87E /* helloTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* hello-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* hello-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* LoisPro.app */,
+				00E356EE1AD99517003FC87E /* LoisProTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* LoisPro-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* LoisPro-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* helloTests */ = {
+		00E356ED1AD99517003FC87E /* LoisProTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "helloTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LoisProTests" */;
 			buildPhases = (
 				262FA39497E44BCF31452B2B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = helloTests;
-			productName = helloTests;
-			productReference = 00E356EE1AD99517003FC87E /* helloTests.xctest */;
+			name = LoisProTests;
+			productName = LoisProTests;
+			productReference = 00E356EE1AD99517003FC87E /* LoisProTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* hello */ = {
+		13B07F861A680F5B00A75B9A /* LoisPro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hello" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LoisPro" */;
 			buildPhases = (
 				9310CC54C31A6368C5238D7B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = hello;
-			productName = hello;
-			productReference = 13B07F961A680F5B00A75B9A /* hello.app */;
+			name = LoisPro;
+			productName = LoisPro;
+			productReference = 13B07F961A680F5B00A75B9A /* LoisPro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* hello-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* LoisPro-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "hello-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "LoisPro-tvOS" */;
 			buildPhases = (
 				ED3064304C39C9C289897EA0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -255,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "hello-tvOS";
-			productName = "hello-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* hello-tvOS.app */;
+			name = "LoisPro-tvOS";
+			productName = "LoisPro-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* LoisPro-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* hello-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* LoisPro-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "hello-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "LoisPro-tvOSTests" */;
 			buildPhases = (
 				FF096F2900C3EC031B1E23DF /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "hello-tvOSTests";
-			productName = "hello-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* hello-tvOSTests.xctest */;
+			name = "LoisPro-tvOSTests";
+			productName = "LoisPro-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* LoisPro-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hello" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LoisPro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* hello */,
-				00E356ED1AD99517003FC87E /* helloTests */,
-				2D02E47A1E0B4A5D006451C7 /* hello-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* hello-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* LoisPro */,
+				00E356ED1AD99517003FC87E /* LoisProTests */,
+				2D02E47A1E0B4A5D006451C7 /* LoisPro-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* LoisPro-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,7 +388,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-helloTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LoisProTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,7 +424,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hello-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LoisPro-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hello-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LoisPro-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,7 +506,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hello-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LoisPro-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* helloTests.m in Sources */,
+				00E356F31AD99517003FC87E /* LoisProTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* helloTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* LoisProTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* hello */;
+			target = 13B07F861A680F5B00A75B9A /* LoisPro */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* hello-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* LoisPro-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = hello;
+			path = LoisPro;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E357C4727833501778D07E51 /* Pods-helloTests.debug.xcconfig */;
+			baseConfigurationReference = E357C4727833501778D07E51 /* Pods-LoisProTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = helloTests/Info.plist;
+				INFOPLIST_FILE = LoisProTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello.app/hello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoisPro.app/LoisPro";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DBBDEF75F6680DB9714F27C /* Pods-helloTests.release.xcconfig */;
+			baseConfigurationReference = 9DBBDEF75F6680DB9714F27C /* Pods-LoisProTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = helloTests/Info.plist;
+				INFOPLIST_FILE = LoisProTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,18 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello.app/hello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoisPro.app/LoisPro";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C059F47DF111B48FD40730BD /* Pods-hello.debug.xcconfig */;
+			baseConfigurationReference = C059F47DF111B48FD40730BD /* Pods-LoisPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = hello/Info.plist;
+				INFOPLIST_FILE = LoisPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -636,18 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = hello;
+				PRODUCT_NAME = LoisPro;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B3A97F0A45A017A767FE719 /* Pods-hello.release.xcconfig */;
+			baseConfigurationReference = 3B3A97F0A45A017A767FE719 /* Pods-LoisPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = hello/Info.plist;
+				INFOPLIST_FILE = LoisPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -655,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = hello;
+				PRODUCT_NAME = LoisPro;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EFBF7C6F0FDE30D8FC837AC /* Pods-hello-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 5EFBF7C6F0FDE30D8FC837AC /* Pods-LoisPro-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -673,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "hello-tvOS/Info.plist";
+				INFOPLIST_FILE = "LoisPro-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.hello-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.LoisPro-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD6DC2513CCF43AC21E429E1 /* Pods-hello-tvOS.release.xcconfig */;
+			baseConfigurationReference = CD6DC2513CCF43AC21E429E1 /* Pods-LoisPro-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -701,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "hello-tvOS/Info.plist";
+				INFOPLIST_FILE = "LoisPro-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.hello-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.LoisPro-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EAA0134FFDD7A80C1EA1F3D /* Pods-hello-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 8EAA0134FFDD7A80C1EA1F3D /* Pods-LoisPro-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "hello-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "LoisPro-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.hello-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.LoisPro-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello-tvOS.app/hello-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoisPro-tvOS.app/LoisPro-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80191806CA433AFC983A232F /* Pods-hello-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 80191806CA433AFC983A232F /* Pods-LoisPro-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -755,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "hello-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "LoisPro-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.hello-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.LoisPro-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello-tvOS.app/hello-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoisPro-tvOS.app/LoisPro-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "helloTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LoisProTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -881,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hello" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LoisPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "hello-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "LoisPro-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "hello-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "LoisPro-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hello" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LoisPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

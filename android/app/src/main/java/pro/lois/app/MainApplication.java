@@ -1,4 +1,4 @@
-package com.hello;
+package pro.lois.app;
 
 import android.app.Application;
 import android.content.Context;

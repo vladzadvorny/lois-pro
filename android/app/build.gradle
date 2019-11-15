@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.hello"
+        applicationId "pro.lois.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
