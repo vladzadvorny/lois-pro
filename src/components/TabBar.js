@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderTopColor: colors.secondary,
     borderTopWidth: 1,
     flexDirection: 'row',
-    paddingBottom: 2
+    paddingBottom: 3
   },
   item: {
     flex: 1,
