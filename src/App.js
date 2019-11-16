@@ -3,6 +3,8 @@ import { SafeAreaView, StatusBar } from 'react-native'
 import * as Font from 'expo-font'
 import { Ionicons } from '@expo/vector-icons'
 
+import './utils/i18n'
+
 import AppNavigator from './navigation/AppNavigator'
 import Loading from './components/Loading'
 
