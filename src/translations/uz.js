@@ -165,4 +165,4 @@ export default {
     attention: 'Diqqat',
     community: 'Telegram chat'
   }
-};
+}

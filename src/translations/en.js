@@ -163,4 +163,4 @@ export default {
     attention: 'Attention',
     community: 'Telegram chat'
   }
-};
+}

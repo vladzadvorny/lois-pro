@@ -166,4 +166,4 @@ export default {
     attention: 'Внимание',
     community: 'Чат в Телеграмм'
   }
-};
+}

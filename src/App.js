@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { SafeAreaView, StatusBar } from 'react-native'
-import * as Font from 'expo-font'
-import { Ionicons } from '@expo/vector-icons'
 
 import './utils/i18n'
 
@@ -16,11 +14,6 @@ const App = () => {
   }, [])
 
   const bootstrap = async () => {
-    await Font.loadAsync({
-      Roboto: require('../assets/fonts/Roboto-Regular.ttf'),
-      Roboto_medium: require('../assets/fonts/Roboto-Medium.ttf'),
-      ...Ionicons.font
-    })
     setLoading(false)
   }
 

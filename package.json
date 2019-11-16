@@ -16,7 +16,6 @@
     "@expo/vector-icons": "^10.0.6",
     "@react-navigation/web": "^1.0.0-alpha.9",
     "expo": "^35.0.1",
-    "expo-font": "^7.0.0",
     "i18next": "^19.0.0",
     "jetifier": "^1.6.4",
     "moment": "^2.24.0",
