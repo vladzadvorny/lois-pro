@@ -14,6 +14,7 @@ import {
 } from 'react-native'
 import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 import { useTranslation } from 'react-i18next'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import { images } from '../constants/images'
 import { colors, freeSpace, fontSize } from '../constants/theme'
@@ -156,10 +157,11 @@ const Drawer = ({ navigation }) => {
                   if (item.domain) goToChat(item.domain)
                 }}
               >
-                <MaterialCommunityIcons
+                <Icon
+                  style={{ width: 25, textAlign: 'center' }}
                   name={item.icon}
-                  size={22}
-                  color={colors.secondary}
+                  size={20}
+                  color={colors.primary}
                 />
 
                 <Text
