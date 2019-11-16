@@ -9,14 +9,34 @@ import {
   Image,
   TouchableOpacity,
   Alert,
-  AsyncStorage
+  AsyncStorage,
+  FlatList
 } from 'react-native'
-import { MaterialIcons } from '@expo/vector-icons'
+import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
+import { useTranslation } from 'react-i18next'
 
 import { images } from '../constants/images'
 import { colors, freeSpace, fontSize } from '../constants/theme'
 
-const Drawer = () => {
+const Drawer = ({ navigation }) => {
+  const { t } = useTranslation([
+    'settings',
+    'about',
+    'coupon',
+    'purchases',
+    'check',
+    'newTask',
+    'common'
+  ])
+  const menu = [
+    { key: t('newTask:newTask'), icon: 'plus', screen: 'CreateTask' },
+    { key: t('purchases:purchases'), icon: 'credit-card', screen: 'Purchase' },
+    { key: t('coupon:coupon'), icon: 'ticket-percent', screen: 'Coupon' },
+    { key: t('check:check'), icon: 'check-circle', screen: 'Check' },
+    { key: t('settings'), icon: 'settings', screen: 'Settings' },
+    { key: t('about:about'), icon: 'information', screen: 'About' }
+  ]
+
   return (
     <View style={styles.main}>
       <ScrollView>
@@ -107,6 +127,54 @@ const Drawer = () => {
             </View>
           </ImageBackground>
         </View>
+
+        {/* menu */}
+        <FlatList
+          scrollEnabled={false}
+          style={{
+            backgroundColor: colors.white,
+            paddingTop: freeSpace,
+            paddingBottom: freeSpace
+          }}
+          data={menu}
+          renderItem={({ item }) => (
+            <View
+              style={{
+                height: 44,
+                flexDirection: 'row',
+                alignItems: 'center'
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  padding: freeSpace
+                }}
+                onPress={() => {
+                  if (item.screen) navigation.navigate(item.screen)
+                  if (item.domain) goToChat(item.domain)
+                }}
+              >
+                <MaterialCommunityIcons
+                  name={item.icon}
+                  size={22}
+                  color={colors.secondary}
+                />
+
+                <Text
+                  style={{
+                    fontSize: fontSize.md,
+                    marginLeft: 5,
+                    color: colors.black
+                  }}
+                >
+                  {item.key}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        />
       </ScrollView>
     </View>
   )
@@ -114,8 +182,8 @@ const Drawer = () => {
 
 const styles = StyleSheet.create({
   main: {
-    flex: 1,
-    backgroundColor: '#f6f6f6'
+    flex: 1
+    // backgroundColor: '#f6f6f6'
     // paddingTop: 24
   },
   logo: {

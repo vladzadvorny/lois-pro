@@ -20,9 +20,6 @@ export default createDrawerNavigator(
     },
     Check: {
       getScreen: () => require('../screens/CheckScreen').default
-    },
-    Referrals: {
-      getScreen: () => require('../screens/ReferralsScreen').default
     }
   },
   {
