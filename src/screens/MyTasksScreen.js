@@ -1,11 +1,16 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const MyTasksScreen = () => {
+import Header from '../components/Header'
+
+const MyTasksScreen = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <Text>MyTasksScreen</Text>
-    </View>
+    <>
+      <Header title="hello" navigation={navigation} />
+      <View style={styles.main}>
+        <Text>MyTasksScreen</Text>
+      </View>
+    </>
   )
 }
 
