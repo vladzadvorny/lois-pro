@@ -3,10 +3,12 @@ import { combineReducers } from 'redux'
 import { RESET_STORE } from '../types'
 import me from './me'
 import app from './app'
+import myTasks from './myTasks'
 
 const reducers = combineReducers({
   me,
-  app
+  app,
+  myTasks
 })
 
 const root = (state, action) => {

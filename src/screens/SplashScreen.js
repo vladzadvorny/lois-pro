@@ -32,7 +32,7 @@ const SplashScreen = ({ navigation }) => {
         .get()
         .json()
 
-      dispatch({ type: SET_ME, payload: data.me })
+      dispatch({ type: SET_ME, payload: { ...data.me, token } })
       navigation.navigate('Main')
     } catch (error) {
       console.log(error)

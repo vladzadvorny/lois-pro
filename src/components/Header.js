@@ -1,10 +1,14 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { useSelector } from 'react-redux'
 
 import { colors, freeSpace, fontSize } from '../constants/theme'
+import { convertCoins } from '../utils/convertCoins'
 
-const Header = ({ navigation }) => {
+const Header = ({ navigation, title }) => {
+  const me = useSelector(state => state.me)
+
   return (
     <View style={styles.main}>
       <View style={styles.left}>
@@ -19,7 +23,7 @@ const Header = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.center}>
-        <Text style={styles.title}>Center</Text>
+        <Text style={styles.title}>{title}</Text>
       </View>
       <View style={styles.right}>
         <TouchableOpacity onPress={() => navigation.navigate('Purchase')}>
@@ -35,7 +39,7 @@ const Header = ({ navigation }) => {
               size={16}
               color={colors.secondary}
             />
-            <Text style={styles.coinsValue}>123</Text>
+            <Text style={styles.coinsValue}>{convertCoins(me.balance)}</Text>
           </View>
         </TouchableOpacity>
       </View>
