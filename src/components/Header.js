@@ -6,21 +6,33 @@ import { useSelector } from 'react-redux'
 import { colors, freeSpace, fontSize } from '../constants/theme'
 import { convertCoins } from '../utils/convertCoins'
 
-const Header = ({ navigation, title }) => {
+const Header = ({ navigation, title, leftElement = 'menu' }) => {
   const me = useSelector(state => state.me)
 
   return (
     <View style={styles.main}>
       <View style={styles.left}>
-        <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-          {/* <MaterialIcons name="menu" size={26} color={colors.white} /> */}
-          <Icon
-            style={{ width: 25, textAlign: 'center' }}
-            name="menu"
-            size={26}
-            color={colors.white}
-          />
-        </TouchableOpacity>
+        {leftElement === 'menu' && (
+          <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+            <Icon
+              style={{ width: 25, textAlign: 'center' }}
+              name="menu"
+              size={26}
+              color={colors.white}
+            />
+          </TouchableOpacity>
+        )}
+
+        {leftElement === 'arrow-back' && (
+          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+            <Icon
+              style={{ width: 25, textAlign: 'center' }}
+              name="arrow-left"
+              size={26}
+              color={colors.white}
+            />
+          </TouchableOpacity>
+        )}
       </View>
       <View style={styles.center}>
         <Text style={styles.title}>{title}</Text>
