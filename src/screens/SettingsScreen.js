@@ -6,7 +6,7 @@ import Header from '../components/Header'
 const SettingsScreen = ({ navigation }) => {
   return (
     <>
-      <Header title="hello" navigation={navigation} />
+      <Header title="hello" navigation={navigation} leftElement="arrow-back" />
 
       <View style={styles.main}>
         <Text>SettingsScreen</Text>
