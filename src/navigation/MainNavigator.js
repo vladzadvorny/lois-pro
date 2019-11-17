@@ -15,6 +15,6 @@ export default createSwitchNavigator(
     Main: DrawerNavigator
   },
   {
-    initialRouteName: 'Main'
+    initialRouteName: 'Splash'
   }
 )

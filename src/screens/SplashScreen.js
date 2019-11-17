@@ -1,20 +1,24 @@
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+/* eslint-disable no-useless-return */
+import React, { useEffect } from 'react'
+import { AsyncStorage } from 'react-native'
 
-const SplashScreen = () => {
-  return (
-    <View style={styles.main}>
-      <Text>SplashScreen</Text>
-    </View>
-  )
-}
+import Loading from '../components/Loading'
 
-const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+const SplashScreen = ({ navigation }) => {
+  useEffect(() => {
+    // bootstrap()
+  }, [])
+
+  const bootstrap = async () => {
+    const token = await AsyncStorage.getItem('@token')
+
+    if (!token) {
+      navigation.navigate('Auth')
+      return
+    }
   }
-})
+
+  return <Loading />
+}
 
 export default SplashScreen

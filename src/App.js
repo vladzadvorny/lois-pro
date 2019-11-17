@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { SafeAreaView, StatusBar } from 'react-native'
+import { Provider } from 'react-redux'
 
 import './utils/i18n'
+import store from './store'
+import { colors } from './constants/theme'
 
 import AppNavigator from './navigation/AppNavigator'
 import Loading from './components/Loading'
@@ -22,12 +25,12 @@ const App = () => {
   }
 
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
+    <Provider store={store}>
+      <StatusBar translucent backgroundColor={`${colors.black}77`} />
       <SafeAreaView style={{ flex: 1 }}>
         <AppNavigator />
       </SafeAreaView>
-    </>
+    </Provider>
   )
 }
 
