@@ -45,7 +45,8 @@ const Header = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   main: {
-    height: 56,
+    paddingTop: 24,
+    height: 56 + 24,
     alignItems: 'center',
     backgroundColor: colors.primary,
     flexDirection: 'row',

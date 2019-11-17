@@ -1,15 +1,55 @@
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import React, { useState } from 'react'
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { useTranslation } from 'react-i18next'
 
-import Header from '../components/Header'
+import { colors, freeSpace, borderRadius, fontSize } from '../constants/theme'
+import { images } from '../constants/images'
+
+import Signup from '../components/Signup'
 
 const AuthScreen = ({ navigation }) => {
+  const { t } = useTranslation(['auth', 'common'])
+  const [showSignup, setShowSignup] = useState(false)
+
+  if (showSignup) {
+    return (
+      <Signup
+        onCancel={() => setShowSignup(false)}
+        navigation={navigation}
+        t={t}
+      />
+    )
+  }
+
   return (
     <>
-      <Header title="hello" navigation={navigation} />
-
       <View style={styles.main}>
-        <Text>AuthScreen</Text>
+        <Image
+          style={{
+            height: 180,
+            marginBottom: freeSpace * 5
+          }}
+          resizeMode="contain"
+          source={images.textLogo}
+        />
+        <View style={{ height: 50, marginBottom: freeSpace * 3 }}>
+          <TouchableOpacity
+            style={{
+              backgroundColor: colors.primary,
+              height: '100%',
+              justifyContent: 'center',
+              alignItems: 'center',
+              borderRadius,
+              paddingRight: freeSpace * 2,
+              paddingLeft: freeSpace * 2
+            }}
+            onPress={() => setShowSignup(true)}
+          >
+            <Text style={{ color: colors.white, fontSize: fontSize.lg }}>
+              {t('signIn')}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </>
   )
@@ -20,7 +60,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red'
+    backgroundColor: colors.white
   }
 })
 

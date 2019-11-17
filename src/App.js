@@ -17,6 +17,7 @@ const App = () => {
   }, [])
 
   const bootstrap = async () => {
+    // TODO: ...
     setLoading(false)
   }
 

@@ -185,9 +185,9 @@ const Drawer = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   main: {
-    flex: 1
+    flex: 1,
     // backgroundColor: '#f6f6f6'
-    // paddingTop: 24
+    paddingTop: 24
   },
   logo: {
     height: 170
