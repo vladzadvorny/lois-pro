@@ -1,11 +1,17 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const AuthScreen = () => {
+import Header from '../components/Header'
+
+const AuthScreen = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <Text>AuthScreen</Text>
-    </View>
+    <>
+      <Header title="hello" navigation={navigation} />
+
+      <View style={styles.main}>
+        <Text>AuthScreen</Text>
+      </View>
+    </>
   )
 }
 

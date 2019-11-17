@@ -1,11 +1,17 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const PurchaseScreen = () => {
+import Header from '../components/Header'
+
+const PurchaseScreen = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <Text>PurchaseScreen</Text>
-    </View>
+    <>
+      <Header title="hello" navigation={navigation} />
+
+      <View style={styles.main}>
+        <Text>PurchaseScreen</Text>
+      </View>
+    </>
   )
 }
 

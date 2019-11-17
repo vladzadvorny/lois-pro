@@ -1,11 +1,38 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import ActionButton from 'react-native-action-button'
 
-const HistoryScreen = () => {
+import { colors } from '../constants/theme'
+
+import Header from '../components/Header'
+
+const HistoryScreen = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <Text>HistoryScreen</Text>
-    </View>
+    <>
+      <Header title="hello" navigation={navigation} />
+
+      <View style={styles.main}>
+        <Text>HistoryScreen</Text>
+      </View>
+
+      <ActionButton
+        buttonColor={colors.secondary}
+        shadowStyle={{
+          shadowColor: '#000000',
+          shadowOpacity: 0.8,
+          shadowRadius: 2,
+          shadowOffset: {
+            height: 1,
+            width: 0
+          }
+        }}
+        offsetY={67}
+        fixNativeFeedbackRadius
+        onPress={() => {
+          navigation.navigate('CreateTask')
+        }}
+      />
+    </>
   )
 }
 

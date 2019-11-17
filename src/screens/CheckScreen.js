@@ -1,11 +1,17 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const CheckScreen = () => {
+import Header from '../components/Header'
+
+const CheckScreen = ({ navigation }) => {
   return (
-    <View style={styles.main}>
-      <Text>CheckScreen</Text>
-    </View>
+    <>
+      <Header title="hello" navigation={navigation} />
+
+      <View style={styles.main}>
+        <Text>CheckScreen</Text>
+      </View>
+    </>
   )
 }
 
