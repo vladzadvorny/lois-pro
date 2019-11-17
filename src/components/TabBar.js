@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import { MaterialIcons } from '@expo/vector-icons'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import { colors, fontSize } from '../constants/theme'
 
@@ -18,9 +18,15 @@ const TabBar = ({ navigation }) => {
             style={styles.itemTouchable}
             onPress={() => navigation.navigate(route.routeName)}
           >
-            <MaterialIcons
+            {/* <MaterialIcons
               name={icons[i]}
               size={index === i ? 28 : 24}
+              color={colors.secondary}
+            /> */}
+            <Icon
+              style={{ width: 25, textAlign: 'center' }}
+              name={icons[i]}
+              size={index === i ? 26 : 22}
               color={colors.secondary}
             />
             <Text style={styles.itemTitle}>{names[i]}</Text>

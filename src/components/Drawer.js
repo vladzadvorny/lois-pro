@@ -4,7 +4,7 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
+  SafeAreaView,
   ImageBackground,
   Image,
   TouchableOpacity,
@@ -12,7 +12,6 @@ import {
   AsyncStorage,
   FlatList
 } from 'react-native'
-import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 import { useTranslation } from 'react-i18next'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -40,7 +39,7 @@ const Drawer = ({ navigation }) => {
 
   return (
     <View style={styles.main}>
-      <ScrollView>
+      <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.logo}>
           <ImageBackground source={images.bg} style={styles.logoBackground}>
             <View style={styles.logoImageContainer}>
@@ -71,7 +70,8 @@ const Drawer = ({ navigation }) => {
                     // RNRestart.Restart()
                   }}
                 >
-                  <MaterialIcons
+                  <Icon
+                    style={{ width: 25, textAlign: 'center' }}
                     name="refresh"
                     size={23}
                     color={colors.black}
@@ -118,7 +118,8 @@ const Drawer = ({ navigation }) => {
                     )
                   }
                 >
-                  <MaterialIcons
+                  <Icon
+                    style={{ width: 25, textAlign: 'center' }}
                     name="exit-to-app"
                     size={23}
                     color={colors.black}
@@ -161,7 +162,7 @@ const Drawer = ({ navigation }) => {
                   style={{ width: 25, textAlign: 'center' }}
                   name={item.icon}
                   size={20}
-                  color={colors.primary}
+                  color={colors.secondary}
                 />
 
                 <Text
@@ -177,7 +178,7 @@ const Drawer = ({ navigation }) => {
             </View>
           )}
         />
-      </ScrollView>
+      </SafeAreaView>
     </View>
   )
 }

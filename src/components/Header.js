@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import { colors, freeSpace, fontSize } from '../constants/theme'
 
@@ -9,7 +9,13 @@ const Header = ({ navigation }) => {
     <View style={styles.main}>
       <View style={styles.left}>
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-          <MaterialIcons name="menu" size={26} color={colors.white} />
+          {/* <MaterialIcons name="menu" size={26} color={colors.white} /> */}
+          <Icon
+            style={{ width: 25, textAlign: 'center' }}
+            name="menu"
+            size={26}
+            color={colors.white}
+          />
         </TouchableOpacity>
       </View>
       <View style={styles.center}>
@@ -18,7 +24,13 @@ const Header = ({ navigation }) => {
       <View style={styles.right}>
         <TouchableOpacity onPress={() => navigation.navigate('Purchase')}>
           <View style={styles.coins}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
+              name="coins"
+              size={16}
+              color={colors.secondary}
+            /> */}
+            <Icon
+              // style={{ width: 25, textAlign: 'center' }}
               name="coins"
               size={16}
               color={colors.secondary}
@@ -41,7 +53,7 @@ const styles = StyleSheet.create({
     paddingRight: freeSpace * 2
   },
   left: {
-    width: 70
+    width: 60
   },
   center: {
     flex: 1
@@ -70,7 +82,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     fontWeight: 'bold',
     marginTop: -2,
-    marginLeft: 7
+    marginLeft: 5
   }
 })
 
