@@ -14,11 +14,14 @@ import {
 } from 'react-native'
 import { useTranslation } from 'react-i18next'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import { useSelector } from 'react-redux'
+import RNRestart from 'react-native-restart'
 
 import { images } from '../constants/images'
 import { colors, freeSpace, fontSize } from '../constants/theme'
 
 const Drawer = ({ navigation }) => {
+  const me = useSelector(state => state.me)
   const { t } = useTranslation([
     'settings',
     'about',
@@ -45,8 +48,8 @@ const Drawer = ({ navigation }) => {
             <View style={styles.logoImageContainer}>
               <Image
                 style={{
-                  width: 80,
-                  height: 80,
+                  width: 90,
+                  height: 120,
                   marginLeft: 10
                 }}
                 resizeMode="contain"
@@ -57,7 +60,7 @@ const Drawer = ({ navigation }) => {
             {/* logo bottom line */}
             <View style={styles.logoBottomLine}>
               <Text style={{ fontSize: fontSize.base, color: colors.black }}>
-                'Name'
+                {me.name}
               </Text>
               <View style={{ flexDirection: 'row' }}>
                 <TouchableOpacity
@@ -110,7 +113,7 @@ const Drawer = ({ navigation }) => {
 
                             // resetStore();
                             // navigation.navigate('Auth');
-                            // RNRestart.Restart()
+                            RNRestart.Restart()
                           }
                         }
                       ]
@@ -190,7 +193,7 @@ const styles = StyleSheet.create({
     paddingTop: 24
   },
   logo: {
-    height: 170
+    height: 220
   },
   logoBackground: {
     width: '100%',
@@ -203,8 +206,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.6)'
   },
   logoImage: {
-    width: 90,
-    height: 90,
+    width: 100,
+    height: 150,
     marginLeft: 10
   },
   logoBottomLine: {

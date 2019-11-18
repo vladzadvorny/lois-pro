@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import TextTicker from 'react-native-text-ticker'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -66,7 +66,7 @@ class HistoryCard extends Component {
             marqueeDelay={3000}
           >
             {type === 'income' && (
-              <Fragment>
+              <>
                 <Text style={{ color: colors.secondary }}>
                   {t('common:you')}
                 </Text>
@@ -75,17 +75,17 @@ class HistoryCard extends Component {
                   {accountName}
                 </Text>
                 <Text style={{ color: colors.black, fontSize: 12 }}>)</Text>
-              </Fragment>
+              </>
             )}
             {type === 'incomeCanceled' && (
-              <Fragment>
+              <>
                 <Text style={{ color: '#87bf0a' }}>{t('common:you')}</Text>
                 <Text style={{ color: colors.black, fontSize: 12 }}> (</Text>
                 <Text style={{ color: `${colors.black}85`, fontSize: 12 }}>
                   {accountName}
                 </Text>
                 <Text style={{ color: colors.black, fontSize: 12 }}>)</Text>
-              </Fragment>
+              </>
             )}
             {type === 'expenses' && (
               <Text style={{ color: '#87bf0a' }}>{accountName}</Text>
