@@ -13,6 +13,8 @@ const Header = ({ navigation, title, leftElement = 'menu' }) => {
   return (
     <View style={styles.main}>
       <View style={styles.left}>
+        {leftElement === null && <View />}
+
         {leftElement === 'menu' && (
           <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
             <Icon
