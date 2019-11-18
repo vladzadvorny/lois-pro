@@ -15,11 +15,11 @@ import { freeSpace, colors, borderRadius, fontSize } from '../constants/theme'
 import { goToChat } from '../utils/goToChat'
 import { uri } from '../constants/config'
 import { convertCoins } from '../utils/convertCoins'
+import { INCREMENT_BALANCE } from '../store/types'
 
 import Header from '../components/Header'
 import { Info } from '../components/Info'
 import Loading from '../components/Loading'
-import { INCREMENT_BALANCE } from '../store/types'
 
 const CouponScreen = ({ navigation }) => {
   const { t } = useTranslation(['coupon', 'common'])

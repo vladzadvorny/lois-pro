@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { SafeAreaView, StatusBar } from 'react-native'
+import { SafeAreaView, StatusBar, AsyncStorage } from 'react-native'
 import { Provider } from 'react-redux'
 
 import './utils/i18n'
 import store from './store'
 import { colors } from './constants/theme'
+import { SET_USE_WEB_LINKS } from './store/types'
 
 import AppNavigator from './navigation/AppNavigator'
 import Loading from './components/Loading'
@@ -17,7 +18,13 @@ const App = () => {
   }, [])
 
   const bootstrap = async () => {
-    // TODO: ...
+    try {
+      const useWebLinks = await AsyncStorage.getItem('@Settings:useWebLinks')
+      store.dispatch({ type: SET_USE_WEB_LINKS, payload: useWebLinks === '1' })
+    } catch (error) {
+      console.log(error)
+    }
+
     setLoading(false)
   }
 
