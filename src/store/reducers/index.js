@@ -4,11 +4,13 @@ import { RESET_STORE } from '../types'
 import me from './me'
 import app from './app'
 import myTasks from './myTasks'
+import history from './history'
 
 const reducers = combineReducers({
   me,
   app,
-  myTasks
+  myTasks,
+  history
 })
 
 const root = (state, action) => {

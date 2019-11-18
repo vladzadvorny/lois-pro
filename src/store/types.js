@@ -10,3 +10,6 @@ export const SET_USE_WEB_LINKS = 'SET_USE_WEB_LINKS'
 
 // my tasks
 export const SET_MY_TASKS = 'SET_MY_TASKS'
+
+// history
+export const SET_HISTORY = 'SET_HISTORY'
