@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { useSelector } from 'react-redux'
+import TextTicker from 'react-native-text-ticker'
 
 import { colors, freeSpace, fontSize } from '../constants/theme'
 import { convertCoins } from '../utils/convertCoins'
@@ -35,7 +36,17 @@ const Header = ({ navigation, title, leftElement = 'menu' }) => {
         )}
       </View>
       <View style={styles.center}>
-        <Text style={styles.title}>{title}</Text>
+        {/* <Text style={styles.title}>{title}</Text> */}
+        <TextTicker
+          style={styles.title}
+          duration={5000}
+          loop
+          bounce
+          repeatSpacer={50}
+          marqueeDelay={3000}
+        >
+          {title}
+        </TextTicker>
       </View>
       <View style={styles.right}>
         <TouchableOpacity onPress={() => navigation.navigate('Purchase')}>
@@ -70,7 +81,7 @@ const styles = StyleSheet.create({
     paddingRight: freeSpace * 2
   },
   left: {
-    width: 60
+    width: 50
   },
   center: {
     flex: 1
@@ -83,7 +94,8 @@ const styles = StyleSheet.create({
   title: {
     color: colors.white,
     fontSize: fontSize.lg,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    maxWidth: 155
   },
   coins: {
     backgroundColor: colors.white,

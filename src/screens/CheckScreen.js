@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import moment from 'moment'
 import { useTranslation } from 'react-i18next'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import wretch from 'wretch'
 
 import { freeSpace, colors, borderRadius, fontSize } from '../constants/theme'
