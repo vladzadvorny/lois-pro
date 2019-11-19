@@ -19,7 +19,7 @@ import { convertCoins } from '../utils/convertCoins'
 
 import Header from '../components/Header'
 import MyTask from '../components/MyTask'
-import { Instruction } from '../components/Info'
+import { Instruction, GoToSite } from '../components/Info'
 import Loading from '../components/Loading'
 
 const MyTasksScreen = ({ navigation }) => {
@@ -176,7 +176,10 @@ const MyTasksScreen = ({ navigation }) => {
 
           {myTasks.length === 0 ? (
             // <Text>{t('common:noTasks')}</Text>
-            <Instruction t={t} />
+            <>
+              <Instruction t={t} />
+              <GoToSite t={t} />
+            </>
           ) : (
             // <Instruction t={t} />
             <>

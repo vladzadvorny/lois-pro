@@ -163,7 +163,7 @@ const Drawer = ({ navigation }) => {
                 }}
               >
                 <Icon
-                  style={{ width: 25, textAlign: 'center' }}
+                  style={{ width: 28, textAlign: 'center' }}
                   name={item.icon}
                   size={20}
                   color={colors.secondary}
@@ -171,7 +171,7 @@ const Drawer = ({ navigation }) => {
 
                 <Text
                   style={{
-                    fontSize: fontSize.md,
+                    fontSize: 19,
                     marginLeft: 5,
                     color: colors.black
                   }}

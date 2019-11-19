@@ -158,6 +158,15 @@ export default {
       'Obunachilarni qoshish uchun vazifa yarating.',
       'Ushbu vazifani ishga tushuring.'
     ],
+    instructionsPro: [
+      'Go through the side menu to the "{{purchases}}" section and buy coins.',
+      '«{{myTasks}}» Yorliqiga qayting.',
+      "Ong pastki burchakdagi to'q sariq tugmachani bosing.",
+      'Obunachilarni qoshish uchun vazifa yarating.',
+      'Ushbu vazifani ishga tushuring.'
+    ],
+    instructionsProFree:
+      'If you want to get members for free, you can earn coins on our website (lois.pro). Click here to go to it.',
     exchangeWarning:
       'Vazifalarda kanallarga obunani bekor qilish taqiqlanadi! Obunani bekor qilsangiz, sizga vazifaning uch baravar miqdorida jarima solinadi. Vazifa uchun pullar kanal egasining hisobiga qaytariladi! Shuning uchun, kelajakda obunani bekor qilmaslik uchun asosiy Telegram hisob qaydnomangizni vazifalarni bajarish uchun ishlatmang, balki soxta akkaunt yarating.',
     exchangeNewTask:

@@ -153,9 +153,18 @@ export default {
       'Subscribe to the channels and get the points for that',
       'Return to the "{{myTasks}}" tab.',
       'Click on the orange button in the lower right corner.',
-      'Create a task for boosting subscribers.',
+      'Create a task for boosting members.',
       'Run this task.'
     ],
+    instructionsPro: [
+      'Go through the side menu to the "{{purchases}}" section and buy coins.',
+      'Return to the "{{myTasks}}" tab.',
+      'Click on the orange button in the lower right corner.',
+      'Create a task for boosting members.',
+      'Run this task.'
+    ],
+    instructionsProFree:
+      'If you want to get members for free, you can earn coins on our website (lois.pro). Click here to go to it.',
     exchangeWarning:
       'Unsubscribe from the channels in the tasks is prohibited! In the case of a unsubscribe, you will be fined in the amount of the triple price of the assignment. Coins for the task will be returned to the account of the owner of the channel! Therefore, in order not to unsubscribe in the future, DO NOT use your main Telegram account to perform tasks, but create other account.',
     exchangeNewTask:

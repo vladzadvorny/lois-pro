@@ -1,8 +1,25 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Linking, Alert } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import { borderRadius, colors, freeSpace, fontSize } from '../constants/theme'
+
+// eslint-disable-next-line consistent-return
+const webLink = async url => {
+  // console.log('lll', store.getState().app.useWebLinks)
+
+  try {
+    const supported = await Linking.canOpenURL(url)
+
+    if (!supported) {
+      return Alert.alert('Error!', 'Telegram app is not installed')
+    }
+
+    return Linking.openURL(url)
+  } catch (error) {
+    Alert.alert('Error!', 'An error occurred')
+  }
+}
 
 export const Info = ({ children }) => (
   <View
@@ -32,14 +49,14 @@ export const Instruction = ({ t }) => (
     style={{
       borderRadius,
       borderWidth: 1,
-      borderColor: colors.primary,
+      borderColor: colors.secondary,
       padding: freeSpace,
       backgroundColor: colors.white
     }}
   >
     <Text
       style={{
-        fontSize: fontSize.base,
+        fontSize: fontSize.lg,
         color: colors.primary,
         marginBottom: freeSpace / 2
       }}
@@ -47,24 +64,25 @@ export const Instruction = ({ t }) => (
       {t('common:instruction')}:
     </Text>
 
-    {t('common:instructions', {
+    {t('common:instructionsPro', {
       returnObjects: true,
       exchange: t('exchange:exchange'),
-      myTasks: t('myTasks')
+      myTasks: t('myTasks'),
+      purchases: t('purchases:purchases')
     }).map((item, i) => (
       <Text
         // eslint-disable-next-line
         key={i}
         style={{
-          fontSize: fontSize.sm,
+          fontSize: fontSize.base,
           color: colors.secondary,
           marginBottom: 2
         }}
       >
         <Text
           style={{
-            fontSize: fontSize.sm,
-            color: colors.primary
+            fontSize: fontSize.base,
+            color: colors.secondary
           }}
         >
           {`${i + 1}) `}
@@ -73,6 +91,30 @@ export const Instruction = ({ t }) => (
       </Text>
     ))}
   </View>
+)
+
+export const GoToSite = ({ t }) => (
+  <TouchableOpacity
+    style={{
+      borderRadius,
+      borderWidth: 1,
+      borderColor: colors.primary,
+      padding: freeSpace,
+      backgroundColor: colors.white,
+      marginTop: freeSpace
+    }}
+    onPress={() => webLink('https://lois.pro')}
+  >
+    <Text
+      style={{
+        fontSize: fontSize.base,
+        color: colors.primary,
+        marginBottom: freeSpace / 2
+      }}
+    >
+      {t('common:instructionsProFree')}
+    </Text>
+  </TouchableOpacity>
 )
 
 export const InfoClose = ({ children, onPress, style }) => (
