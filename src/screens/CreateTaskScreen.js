@@ -15,7 +15,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import wretch from 'wretch'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { freeSpace, colors, fontSize } from '../constants/theme'
+import { freeSpace, colors, fontSize, borderRadius } from '../constants/theme'
 import { botName, uri } from '../constants/config'
 import { InfoStorage } from '../utils/infoStorage'
 import { SET_MY_TASKS } from '../store/types'
@@ -25,7 +25,7 @@ import { InfoClose } from '../components/Info'
 import Loading from '../components/Loading'
 
 const color = (fields, field) =>
-  fields.indexOf(field) === -1 ? colors.black : colors.secondary
+  fields.indexOf(field) === -1 ? colors.primary : colors.secondary
 
 const errorMessage = (t, message) => {
   switch (message) {
@@ -108,7 +108,7 @@ const CreateTaskScreen = ({ navigation }) => {
       <ScrollView contentContainerStyle={styles.main}>
         {loading && <Loading over />}
 
-        <View style={{ marginBottom: freeSpace * 2 }}>
+        <View style={{ marginBottom: freeSpace }}>
           <Text style={styles.step}>
             {t('common:step', { step: 1 })}: {t('botAdmin')}
           </Text>
@@ -153,7 +153,7 @@ const CreateTaskScreen = ({ navigation }) => {
                 borderWidth: 1,
                 borderColor: color(fields, 'chat'),
                 borderStyle: 'solid',
-                // borderRadius,
+                borderRadius,
                 padding: freeSpace
               }}
               placeholder="@channel or @supergroup"
@@ -190,7 +190,7 @@ const CreateTaskScreen = ({ navigation }) => {
                 borderWidth: 1,
                 borderColor: color(fields, 'price'),
                 borderStyle: 'solid',
-                // borderRadius,
+                borderRadius,
                 padding: freeSpace,
                 paddingRight: 3
               }}
@@ -237,7 +237,7 @@ const CreateTaskScreen = ({ navigation }) => {
                 borderWidth: 1,
                 borderColor: color(fields, 'amount'),
                 borderStyle: 'solid',
-                // borderRadius,
+                borderRadius,
                 padding: freeSpace,
                 paddingRight: 3
               }}
@@ -268,6 +268,7 @@ const CreateTaskScreen = ({ navigation }) => {
               marginTop: freeSpace,
               borderWidth: 1,
               borderColor: colors.primary,
+              borderRadius,
               borderStyle: 'solid',
               padding: freeSpace,
               backgroundColor: `${colors.primary}20`
@@ -291,66 +292,66 @@ const CreateTaskScreen = ({ navigation }) => {
             {t('common:exchangeNewTask')}
           </InfoClose>
         )}
+
+        {/* footer */}
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            padding: 10,
+            // paddingBottom: 5,
+            borderTopWidth: 1,
+            borderColor: colors.primary,
+            borderStyle: 'solid'
+          }}
+        >
+          <View
+            style={{
+              height: 40
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                backgroundColor: colors.secondary,
+                height: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 4,
+                paddingRight: freeSpace * 2,
+                paddingLeft: freeSpace * 2
+              }}
+              onPress={() => navigation.navigate('MyTasks')}
+            >
+              <Text style={{ color: colors.white, fontSize: fontSize.base }}>
+                {t('common:cancel')}
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <View
+            style={{
+              height: 40
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                backgroundColor: colors.primary,
+                height: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: 4,
+                paddingRight: freeSpace * 2,
+                paddingLeft: freeSpace * 2
+              }}
+              onPress={() => onSend(false)}
+            >
+              <Text style={{ color: colors.white, fontSize: fontSize.base }}>
+                {t('common:save')}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </ScrollView>
-
-      {/* footer */}
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          padding: 10,
-          // paddingBottom: 5,
-          borderTopWidth: 1,
-          borderColor: colors.primary,
-          borderStyle: 'solid'
-        }}
-      >
-        <View
-          style={{
-            height: 40
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              backgroundColor: colors.secondary,
-              height: '100%',
-              justifyContent: 'center',
-              alignItems: 'center',
-              borderRadius: 4,
-              paddingRight: freeSpace * 2,
-              paddingLeft: freeSpace * 2
-            }}
-            onPress={() => navigation.navigate('MyTasks')}
-          >
-            <Text style={{ color: colors.white, fontSize: fontSize.base }}>
-              {t('common:cancel')}
-            </Text>
-          </TouchableOpacity>
-        </View>
-
-        <View
-          style={{
-            height: 40
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              backgroundColor: colors.primary,
-              height: '100%',
-              justifyContent: 'center',
-              alignItems: 'center',
-              borderRadius: 4,
-              paddingRight: freeSpace * 2,
-              paddingLeft: freeSpace * 2
-            }}
-            onPress={() => onSend(false)}
-          >
-            <Text style={{ color: colors.white, fontSize: fontSize.base }}>
-              {t('common:save')}
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
     </>
   )
 }
@@ -379,7 +380,7 @@ const styles = StyleSheet.create({
     borderColor: colors.secondary,
     borderStyle: 'solid',
     padding: freeSpace,
-    borderRadius: 8,
+    borderRadius,
     backgroundColor: `${colors.secondary}20`
   }
 })

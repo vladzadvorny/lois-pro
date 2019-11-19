@@ -200,24 +200,24 @@ const MyTasksScreen = ({ navigation }) => {
                       Alert.alert(
                         t('common:error'),
                         // eslint-disable-next-line
-                        t('newTask:warning', {
+                        t('errors:TASK_NOT_ENOUGH_COINS', {
                           x: convertCoins(parseFloat(task.price) * task.amount)
                         }),
                         [
                           {
-                            text: t('purchase:purchase'),
+                            text: t('purchases:purchases'),
                             onPress: () => {
                               setError(null)
                               navigation.navigate('Purchase')
                             }
                           },
-                          {
-                            text: t('common:toEarnMoney'),
-                            onPress: () => {
-                              setError(null)
-                              navigation.navigate('Exchange')
-                            }
-                          },
+                          // {
+                          //   text: t('common:toEarnMoney'),
+                          //   onPress: () => {
+                          //     setError(null)
+                          //     navigation.navigate('Exchange')
+                          //   }
+                          // },
                           {
                             text: t('common:ok'),
                             onPress: () => {

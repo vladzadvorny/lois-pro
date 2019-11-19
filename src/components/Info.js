@@ -122,7 +122,7 @@ export const InfoClose = ({ children, onPress, style }) => (
     style={{
       borderRadius,
       borderWidth: 1,
-      borderColor: colors.primary,
+      borderColor: colors.secondary,
       padding: freeSpace,
       paddingRight: freeSpace / 2 + 1,
       backgroundColor: colors.white,
@@ -149,7 +149,7 @@ export const InfoClose = ({ children, onPress, style }) => (
         justifyContent: 'center',
         padding: freeSpace / 2,
         paddingRight: 0,
-        borderLeftColor: colors.primary,
+        borderLeftColor: colors.secondary,
         borderLeftWidth: 1,
         alignItems: 'center'
       }}
@@ -158,7 +158,7 @@ export const InfoClose = ({ children, onPress, style }) => (
         // style={{ paddingLeft: freeSpace * 2 }}
         name="close"
         size={22}
-        color={colors.primary}
+        color={colors.secondary}
       />
     </TouchableOpacity>
   </View>
