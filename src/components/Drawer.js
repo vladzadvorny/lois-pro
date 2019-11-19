@@ -19,6 +19,7 @@ import RNRestart from 'react-native-restart'
 
 import { images } from '../constants/images'
 import { colors, freeSpace, fontSize } from '../constants/theme'
+import { goToChat } from '../utils/goToChat'
 
 const Drawer = ({ navigation }) => {
   const me = useSelector(state => state.me)

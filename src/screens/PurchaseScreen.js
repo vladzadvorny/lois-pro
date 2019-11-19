@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native'
 import TextTicker from 'react-native-text-ticker'
 import { useTranslation } from 'react-i18next'
 import moment from 'moment'
-import * as RNIap from 'react-native-iap'
+import RNIap from 'react-native-iap'
 import _ from 'lodash'
 import { useDispatch, useSelector } from 'react-redux'
 import wretch from 'wretch'
@@ -29,21 +29,34 @@ const PurchaseScreen = ({ navigation }) => {
     dispatch({ type: INCREMENT_BALANCE, payload })
 
   useEffect(() => {
-    // getProducts()
-    // getPurchases()
+    ;(async () => {
+      // eslint-disable-next-line no-unused-vars
+      const result = await RNIap.initConnection()
+    })()
 
-    return () => RNIap.endConnection()
+    RNIap.consumeAllItemsAndroid()
+      .then()
+      .catch(console.log)
+
+    getProducts()
+    getPurchases()
+
+    return () => {
+      RNIap.endConnectionAndroid()
+    }
   }, [])
 
   const getProducts = async () => {
+    setLoading(true)
     try {
-      await RNIap.consumeAllItems()
+      // await RNIap.consumeAllItemsAndroid()
       // eslint-disable-next-line no-shadow
       let products = await RNIap.getProducts([
-        'coins_450',
+        'coins_451',
         'coins_1500',
         'coins_2500',
         'coins_5500'
+        // 'test_15'
       ])
       // const products = await RNIap.getProducts(['android.test.purchased'])
 
@@ -58,6 +71,7 @@ const PurchaseScreen = ({ navigation }) => {
     } catch (error) {
       console.log(error)
     }
+    setLoading(false)
   }
 
   const getPurchases = async () => {
@@ -78,8 +92,10 @@ const PurchaseScreen = ({ navigation }) => {
 
   const onBuy = async _productId => {
     try {
-      await RNIap.consumeAllItems()
-      const purchase = await RNIap.buyProduct(_productId)
+      RNIap.consumeAllItemsAndroid()
+        .then()
+        .catch(console.log)
+      const purchase = await RNIap.requestPurchase(_productId)
 
       // eslint-disable-next-line
       const { orderId, packageName, productId, purchaseToken } = JSON.parse(
@@ -98,7 +114,7 @@ const PurchaseScreen = ({ navigation }) => {
       // https://www.googleapis.com/androidpublisher/v3/applications/com.zadvorny.lois/purchases/products/android.test.purchased/tokens/inapp:com.zadvorny.lois:android.test.purchased
 
       const data = await wretch(uri)
-        .url('/purchases/check')
+        .url('/purchases/google-play')
         .auth(`Bearer ${me.token}`)
         .post({
           orderId,
